@@ -29,8 +29,7 @@ const PageSize = () => {
         }
     }, [])
 
-    return !isLoading && width
-        
+    return isLoading ? 0 : width;
 }
 
 export default PageSize

@@ -1,3 +1,4 @@
+'use client';
 import Modal from 'react-modal';
 
 interface ModalProps {
@@ -7,7 +8,7 @@ interface ModalProps {
 
 const ModalView = ({isOpen, children}:ModalProps) => {
     return (
-            <Modal isOpen={isOpen} className="rounded-lg m-10 h-auto w-auto bg-gray-100 border-2 border-gray-300" >
+            <Modal isOpen={isOpen} className="rounded-lg m-10 h-auto w-auto bg-gray-100 border-2 border-gray-300" ariaHideApp={false}>
                 {children}
             </Modal>
     )

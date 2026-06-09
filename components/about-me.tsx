@@ -1,3 +1,4 @@
+'use client';
 import PageSize from "@/utility/page-size";
 import Image from "next/image";
 import Link from "next/link";

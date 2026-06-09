@@ -1,3 +1,4 @@
+'use client';
 import { useState } from "react";
 import Image from "next/image";
 import profile from "../images/my-photo/profile.jpg" // 프로필사진
