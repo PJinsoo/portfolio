@@ -1,11 +1,12 @@
+'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation'
 import Projects from './projects';
 
-SwiperCore.use([Navigation, Pagination])
+
 
 const SwiperLib = () => {
     return(
@@ -18,6 +19,7 @@ const SwiperLib = () => {
                 onSwiper={(swiper) => console.log(swiper)}
                 navigation
                 pagination={{ clickable: true }}
+                modules={[Navigation, Pagination]}
             >
                 <SwiperSlide className=''>
                     1

@@ -1,3 +1,4 @@
+'use client';
 // 프론트 스킬 아이콘 이미지 Import
 import HTML from "../images/front-icon/html5.png"
 import JS from "../images/front-icon/JavaScript.png"

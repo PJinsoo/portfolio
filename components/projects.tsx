@@ -1,9 +1,10 @@
+'use client';
 import PageSize from "@/utility/page-size";
 import Title from "./title";
 import testImg from "../images/test-img.jpg"
 import ProjectTemplate from "./projectTemplate";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation'
@@ -20,7 +21,7 @@ import Board from "../images/project-img/board/main.png"
 
 const Projects = () => {
     const pageSize = PageSize()
-    SwiperCore.use([Navigation, Pagination])
+    
 
     return (
         <div className="z-0">
@@ -39,6 +40,7 @@ const Projects = () => {
                     slidesPerView={1}
                     pagination={{ clickable: true }}
                     allowTouchMove // 터치 허용
+                    modules={[Navigation, Pagination]}
                     threshold={20} // 터치 감도
                 >
                     {/* 포폴 */}

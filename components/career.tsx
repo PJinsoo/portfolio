@@ -1,3 +1,4 @@
+'use client';
 import Title from "./title";
 import Image from "next/image";
 import PageSize from "@/utility/page-size";
